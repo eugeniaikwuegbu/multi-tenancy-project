@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { KnexBuilderService } from 'src/knex-builder/knex-builder.service';
+import { KnexBuilderService } from 'src/modules/knex-builder/knex-builder.service';
 import { UsersController } from './users.controller';
 import { UsersService } from './users.service';
 

@@ -27,18 +27,12 @@ export class KnexBuilderService {
         return {
           sttausCode: 201,
           message: `Schema ${schema} created successfully.`,
-          data: latestMigration,
         };
       }
-
-      const [latestMigration] = await knex('knex_migrations')
-        .orderBy('id', 'desc')
-        .limit(1);
 
       return {
         statusCode: 200,
         message: `Migration details for ${schema} already exist`,
-        data: latestMigration,
       };
     } catch (error) {
       console.error('Error running migration:', error);

@@ -1,5 +1,5 @@
 import { Inject, Injectable, NotFoundException } from '@nestjs/common';
-import { KnexBuilderService } from 'src/knex-builder/knex-builder.service';
+import { KnexBuilderService } from 'src/modules/knex-builder/knex-builder.service';
 import { CreateUserDto } from './dto/create-user.dto';
 
 @Injectable()
@@ -8,7 +8,6 @@ export class UsersService {
   private readonly knexBuilderService: KnexBuilderService;
 
   async createUser(tenantId: string, userModel, createUserDto: CreateUserDto) {
-    // check if tenantId exists, if not reject req
     const schemaExists =
       await this.knexBuilderService.doesSchemaExist(tenantId);
 
