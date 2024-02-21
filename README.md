@@ -24,7 +24,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+This simple project illustrates the Multi-Tenancy Infrastructure using knex and ObjectionJs.
 
 ## Installation
 
