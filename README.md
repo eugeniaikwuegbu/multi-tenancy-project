@@ -24,7 +24,7 @@
 
 ## Description
 
-This simple project illustrates the Multi-Tenancy Infrastructure using knex and ObjectionJs.
+This simple project illustrates the Multi-Tenancy Architecture using Knex and ObjectionJs.
 
 ## Installation
 
